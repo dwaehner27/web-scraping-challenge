@@ -1,7 +1,7 @@
 # Web Scraping Challenge
 
 ## Description
-I was tasked to build a web application that scrapes various websites that provide data related to Mars and display the collected data in a single HTML page. For more details on the assignment see assignment section.
+I was tasked to build a web application that scrapes various websites that provide data related to Mars and display the collected data in a single HTML page. For more details on the assignment see assignment section [here](https://github.com/dwaehner27/web-scraping-challenge/blob/main/README.md#assignment).
 
 ## How to Run Code
 Clone this repository, locate and open the app.py file, run code in terminal, and run the Flask app. Click "Get Mars Data!" to proceed with web scraping and view resulting data. To see the web scraping process, run the mission_to_mars Jupyter notebook.

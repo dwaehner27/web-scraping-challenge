@@ -76,19 +76,7 @@ https://galaxyfacts-mars.com/
 
 * Append the dictionary with the image url string and the hemisphere title to a list. This list will contain one dictionary for each hemisphere.
 
-```python
-# Example:
-hemisphere_image_urls = [
-    {"title": "Valles Marineris Hemisphere", "img_url": "..."},
-    {"title": "Cerberus Hemisphere", "img_url": "..."},
-    {"title": "Schiaparelli Hemisphere", "img_url": "..."},
-    {"title": "Syrtis Major Hemisphere", "img_url": "..."},
-]
-```
-
-- - -
-
-## Step 2 - MongoDB and Flask Application
+### Step 2 - MongoDB and Flask Application
 
 Use MongoDB with Flask templating to create a new HTML page that displays all of the information that was scraped from the URLs above.
 
@@ -106,7 +94,7 @@ Use MongoDB with Flask templating to create a new HTML page that displays all of
 
 - - -
 
-## Step 3 - Submission
+### Step 3 - Submission
 
 To submit your work to BootCampSpot, create a new GitHub repository and upload the following:
 
@@ -118,7 +106,7 @@ To submit your work to BootCampSpot, create a new GitHub repository and upload t
 
 4. Ensure your repository has regular commits (i.e. 20+ commits) and a thorough README.md file
 
-## Hints
+### Hints
 
 * Use Splinter to navigate the sites when needed and BeautifulSoup to help find and parse out the necessary data.
 
@@ -126,7 +114,7 @@ To submit your work to BootCampSpot, create a new GitHub repository and upload t
 
 * Use Bootstrap to structure your HTML template.
 
-## Rubric
+### Rubric
 
 [Unit 12 Rubric - Web Scraping Homework - Mission to Mars](https://docs.google.com/document/d/1paGEIFS5yp2VQu6G8F45B4uj1t1t29zL73KEQrD0xpo/edit?usp=sharing)
 

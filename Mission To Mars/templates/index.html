@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container">
     <div class="jumbotron text-center">
       <h1>Mission To Mars</h1>
       <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Get Data!</a></p>
@@ -18,34 +18,41 @@
     <div class="row" id= "mars-news">
         <div class = "col-md-12">
             <h2>Latest Mars News</h2>
-            <h4 class="media-heading">{{mars_data.latest_news_title}}</h4>
+            <h3 class="media-heading">{{mars_data.latest_news_title}}</h4>
             <p>{{mars_data.latest_news_paragraph}}</p>
         </div>
     </div>
     <div class="row" id= "mars-image">
-      <div class = "col-md-6">
+      <div class = "col-md-8">
           <h2>Featured Mars Image</h2>
           <img src = "{{mars_data.mars_image}}">
       </div>
-      <div class = "col-md-6">
+      <div class = "col-md-4">
         <h2>Mars Facts</h2>
-        {{mars_data.mars_facts|safe}}
+        <p>{{mars_data.mars_facts|safe}}</p>
 
     </div>
   </div>
-  <div class = "row" id= "mars-hemi">
-    <h2>Mars Hemispheres</h2>
-    {%for x in mars_data.hemispheres%}
-    <div class = "col-md-6">
-      <img src = "{{x.img_url}}">
-      <h3>{{x.title}}</h3>
-
+  <div class = 'row'>
+    <br>
+    <div class = 'col-md-12'>
+        <h2>Hemispheres of Mars</h2>
+        {% for i in mars_data.hemispheres %}
+            <div class = 'col-lg-3'>  
+                <div class = 'card' style='width: 20rem;'>
+                    <div class = 'card-body'>
+                        <a href = '{{ i.img_url }}'> 
+                            <img class = 'card-img-top img-responsive' src = '{{ i.img_url }}' style = 'max-width: 100%;'>
+                        </a>
+                        <h4 class = 'card-title'> {{ i.title }}</h4>
+                    </div>
+                </div>
+            </div>  
+        {% endfor %}
     </div>
+</div>
+</div>
+    
 
-    {%endfor%}
-  </div>
-  </div>
-  </div>
-</body>
 
 </html>

@@ -9,27 +9,12 @@ Clone this repository, locate and open the app.py file, run code in terminal, an
 ## Results
 The resulting view of the scraped data is shown below:
 
+![image](https://user-images.githubusercontent.com/61367502/121986471-25cfe900-cd5c-11eb-9a8f-6687c859f85f.png)
+
+
 ## Assignment
 
 In this assignment, you will build a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page. The following outlines what you need to do.
-
-### Before You Begin
-
-
-* Create a new repository for this project called web-scraping-challenge. Do not add this homework to an existing repository.
-
-
-* Clone the new repository to your computer.
-
-
-* Inside your local git repository, create a directory for the web scraping challenge. Use a folder name to correspond to the challenge: Missions_to_Mars.
-
-
-* Add your notebook files to this folder as well as your flask app.
-
-
-* Push the above changes to GitHub or GitLab.
-
 
 
 ### Step 1 - Scraping
